@@ -1,4 +1,4 @@
-# dhairyaar-skills
+# agent-skills
 
 Agent skills I use day to day with coding agents (Claude Code, Codex, Pi, and similar).
 
