@@ -1,0 +1,3 @@
+interface:
+  display_name: "Spike"
+  short_description: "Time-boxed investigation with a verdict"
