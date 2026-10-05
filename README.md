@@ -12,6 +12,7 @@ Agents that support the [Agent Skills](https://agentskills.io) layout can load t
 | [`lightweight`](./lightweight/) | Audit a product for bloat, latency, memory, and bundle size without cutting quality |
 | [`spike`](./spike/) | Research a technical topic and write a findings doc before building |
 | [`x-post`](./x-post/) | Draft an X/Twitter post (or thread) in a human voice |
+| [`legible-output`](./legible-output/) | Explain, diagram, or build a throwaway page so a topic is easy to check |
 
 ### lightweight
 
@@ -30,6 +31,11 @@ Drafts posts like a voice memo typed out - one beat, specific, with a rough edge
 Produces a few ready-to-paste candidates at different energies (dry / playful / blunt).
 Voice checklist lives in [`x-post/VOICE.md`](./x-post/VOICE.md).
 
+### legible-output
+
+Picks the cheapest format that makes a topic checkable: writing, a diagram, an HTML page, or a video.
+Keeps one term per concept and one idea per sentence.
+
 ## Layout
 
 ```text
@@ -40,9 +46,11 @@ Voice checklist lives in [`x-post/VOICE.md`](./x-post/VOICE.md).
 ├── spike/
 │   ├── SKILL.md
 │   └── agents/
-└── x-post/
-    ├── SKILL.md
-    └── VOICE.md
+├── x-post/
+│   ├── SKILL.md
+│   └── VOICE.md
+└── legible-output/
+    └── SKILL.md
 ```
 
 ## Install
@@ -54,6 +62,7 @@ Copy or symlink the skill folders into your agent's skills directory, for exampl
 ln -s "$PWD/lightweight" ~/.agents/skills/lightweight
 ln -s "$PWD/spike" ~/.agents/skills/spike
 ln -s "$PWD/x-post" ~/.agents/skills/x-post
+ln -s "$PWD/legible-output" ~/.agents/skills/legible-output
 ```
 
 Exact paths depend on the agent.
